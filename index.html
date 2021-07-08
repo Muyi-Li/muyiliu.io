@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Muyi Liu's personal portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-gem"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Muyi Liu</h1>
+								<p> Welcome to my personal website! I'm currently Master of Computer Science student at the University of Delaware </p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro">Intro</a></li>
+								<li><a href="#project">Project</a></li>
+								<li><a href="#about">About</a></li>
+								<li><a href="#contact">Contact</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="intro">
+								<h2 class="major">Intro</h2>
+								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+								<p>First line</a>.</p>
+								<p>bitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+							</article>
+
+						<!-- Work -->
+							<article id="project">
+								<h2 class="major">First project</h2>
+								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+								<p>This is the introduction of my project</p>
+								
+								<h2 class="major">Second project</h2>
+								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+								<p>This is the introduction of my project</p>
+
+
+								<ul class="icons">
+									<li><a href="https://github.com/Muyi-Li" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>	
+
+							</article>
+							
+
+						<!-- About -->
+							<article id="about">
+								<h2 class="major">About</h2>
+								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+							</article>
+
+						<!-- Contact -->
+								<article id="contact">
+									<h2 class="major">Contact</h2>
+									<form action="https://formspree.io/f/xjvjonbk" method="POST">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="4"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="actions" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form> 
+							
+							
+								<script>
+									const constraints = {
+										name: {
+											presence: { allowEmpty: false }
+										},
+										email: {
+											presence: { allowEmpty: false },
+											email: true
+										},
+										message: {
+											presence: { allowEmpty: false }
+										}
+									};
+								 
+									const form = document.getElementById('contact-form');
+								 
+									form.addEventListener('submit', function (event) {
+									  const formValues = {
+										  name: form.elements.name.value,
+										  email: form.elements.email.value,
+										  message: form.elements.message.value
+									  };
+								 
+									  const errors = validate(formValues, constraints);
+								 
+									  if (errors) {
+										event.preventDefault();
+										const errorMessage = Object
+											.values(errors)
+											.map(function (fieldValues) { return fieldValues.join(', ')})
+											.join("\n");
+								 
+										alert(errorMessage);
+									  }
+									}, false);
+								 </script>
+								<ul class="icons">
+									<li><a href="https://github.com/Muyi-Li" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</article>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="Credit">&copy; Muyi Liu's portfolio. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
